@@ -6,16 +6,15 @@
 
 html {
     font-size: 62.5%;
-    /*cambiar medida del rem*/
 }
 
-/* para tipografia local tiene que estar en una carpeta en nuestro archivo */
+
 @font-face {
     font-family: "megadeth";
     src: url(../fuentes/megadeth.ttf)
 }
 
-/*se puede elegir una fuente desde la wb, en google font*/
+
 body {
     font-family: 'Roboto Mono', monospace, sans-serif;
     font-size: 20px;
@@ -55,11 +54,6 @@ body {
 .fondoimagen {
     display: grid;
     grid-template-areas: none;
-    /*background-image: url("../multimedia/guitarras\ modificacion\ joa.jpg");
-    background-repeat: repeat;
-    background-position: 0lvw;
-    background-size: contain;
-background-size: cover*;*/
 }
 
 h1 {
@@ -93,11 +87,6 @@ h1 {
     margin: 20px;
 }
 
-/*.integrantes i1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}*/
 
 .integrante1 {
     font-size: 20px;
@@ -125,9 +114,6 @@ h1 {
     margin: 20px;
 }
 
-footer {
-    margin: 50px;
-}
 
 .m1 {
     fill-rule: evenodd;
@@ -140,81 +126,125 @@ footer {
     margin: 20px;
 }
 
-/*.contenedortotal{
+/* DISEÑO PARA PAG GALERIA */
+
+.grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 0.2fr 0.2fr 1fr 0.2fr;
-    grid-template-areas: 
-    "top menu"
-    "fondoimagen fondo imagen"
-    "margen margen";
-}
-.top{
-    grid-area: top;
-}
-.memu{
-    grid-area: menu;
-}
-.fondoimagen{
-    grid-area: fondoimagen;
-}
-.margen{
-    grid-area: margen;
-}*/
-p:hover{
-    font-size: px;
-    background-color: aquamarine;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 30px 30px;
+    grid-template-areas:
+        "ph1 ph2 ph3 ph3"
+        "ph4 ph4 ph3 ph3"
+        "ph6 ph6 ph5 ph7";
+    padding: 50px;
+    justify-content: center;
+    align-items: stretch;
 }
 
-/*no fueron visitados aun*/
-a:link{
+.ph1 {
+    grid-area: ph1;
+    background-image: url(../multimedia/11m.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.ph2 {
+    grid-area: ph2;
+    background-image: url(../multimedia/13m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ph3 {
+    grid-area: ph3;
+    background-image: url(../multimedia/15m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ph4 {
+    grid-area: ph4;
+    background-image: url(../multimedia/1m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ph5 {
+    grid-area: ph5;
+    background-image: url(../multimedia/21m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ph6 {
+    grid-area: ph6;
+    background-image: url(../multimedia/guitarras\ modificacion\ joa.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.ph7 {
+    grid-area: ph7;
+    background-image: url(../multimedia/guerra.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* DISEÑO PARA PAG VIDEO */
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/* DISEÑO PARA PAG DISCOS*/
+
+.discos {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 600px;
+    gap: 50px 50px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.dd {
+    width: 400px;
+}
+
+.a {
+    list-style-type: none;
     text-decoration: none;
-    color: red;
-}
-/*ya fueron visitados*/
-a:visited{
-    color: chartreuse;
-}
-/*cuando el usuario hace click y lo mantiene activo*/
-a:active{
-    background-color: red;
-    color: black;
-    font-weight: bolder;
+    color: white;
+    display: inline-block;
+    margin: 20px;
 }
 
-/*para formularios*/
-input:focus{
-    height:  30px;
-    background-color: orange;
-}
-input[type="checkbox"]:checked{
-    box-shadow: 0 0 0 3px pink
+
+/* DISEÑO DEL FOOTER */
+
+footer {
+    margin: 10px;
 }
 
-.gracias{ 
-    display: none;
+.margenpiedepagina {
+    display: flex;
+    flex-direction: row;
+    margin: 100px
 }
 
-/*para hacer aparecer algo que oculte*/
-inpuy[type="checkbox"]:checked ~ .gracias{
-    display: initial;
-}   
-
-/*le da fprmato a todos menos al padre*/
-div:not(.padre){
-    padding-left:40px;
+.espacio {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px 0px 0px
 }
 
-.padre div:first-child{
-    background-color: blanchedalmond;
-    font-weight: bolder;
+.navegador footer {
+    justify-content: start;
 }
-/*pueden ser first o last o usar nth-child(x) para darle estilo a un hijo en especial*/
-.padre div:nth-child(2){
-    background-color: blanchedalmond;
-    font-weight: bolder;
-}
-/*:nth-child()
-pares:even/2n
-impares: odd/2n+1*/
-
