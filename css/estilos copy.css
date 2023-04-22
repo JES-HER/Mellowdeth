@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+@font-face {
+    font-family: "megadeth";
+    src: url(../fuentes/megadeth.ttf)
+}
+
+/*DISEÑO GENERAL DE TODAS LAS PAGINAS*/
+
+body {
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    font-size: 20px;
+    color: white
+}
+
+.navegador {
+    background-color: black;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+
+.menu li {
+    font-family: "megadeth";
+    list-style-type: none;
+    font-weight: 60px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+}
+
+
+.fondoimagen {
+    display: grid;
+    grid-template-areas: none;
+}
+
+/*DISEÑO DE TITULOS Y PARRAFOS*/
+h1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "megadeth", sans-serif;
+    font-weight: 60px;
+    color: white;
+    margin: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+/*IMAGENES DEL INDEX*/
+
+.logo {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.i0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.i0-1 {
+    width: 600px;
+}
+
+.i1 {
+    width: 300px;
+    background-color: black;
+    margin: 20px;
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.int {
+    display: grid;
+    grid-template-columns: 350px;
+    justify-items: center;
+}
+
+/*DISESÑO DEL CONTACTO*/
+
+.formulario {
+    margin: 60px;
+}
+
+.formulario input {
+    margin: 20px;
+}
+
+
+.m1 {
+    fill-rule: evenodd;
+}
+
+.margen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+/* DISEÑO PARA PAG GALERIA */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: repeat(3, 300px);
+    gap: 30px 30px;
+    grid-template-areas:
+        "ph1 ph2 ph3 ph3"
+        "ph4 ph4 ph3 ph3"
+        "ph6 ph6 ph5 ph7";
+    padding: 50px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.ph1 {
+    grid-area: ph1;
+    background-image: url(../multimedia/11m.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.ph2 {
+    grid-area: ph2;
+    background-image: url(../multimedia/13m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ph3 {
+    grid-area: ph3;
+    background-image: url(../multimedia/15m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ph4 {
+    grid-area: ph4;
+    background-image: url(../multimedia/1m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ph5 {
+    grid-area: ph5;
+    background-image: url(../multimedia/21m.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.ph6 {
+    grid-area: ph6;
+    background-image: url(../multimedia/guitarras\ modificacion\ joa.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.ph7 {
+    grid-area: ph7;
+    background-image: url(../multimedia/guerra.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* DISEÑO PARA PAG VIDEOS */
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+/* DISEÑO PARA PAG DISCOS*/
+
+.discos {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 600px;
+    gap: 50px 50px;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.dd {
+    width: 400px;
+}
+
+.a {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+}
+
+
+/* DISEÑO DEL FOOTER */
+
+footer {
+    margin: 10px;
+}
+
+.margenpiedepagina {
+    display: flex;
+    flex-direction: row;
+    margin: 100px
+}
+
+.espacio {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 20px 0px 0px
+}
+
+.navegador footer {
+    justify-content: start;
+}
+
+@media screen and (max-width:425px) {
+    .logo {
+        width: 300px;
+        height: 80px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        justify-content: stretch;
+     }
+
+    .nav {
+        font-size: 25px;
+        justify-content: stretch;
+        flex-wrap: wrap;
+    }
+
+    .menu {
+        font-size: 20px;
+    }
+
+    .margenpiedepagina {
+        display: flex;
+        flex-direction: row;
+        margin: 100px 0px 50px 20px;
+        justify-content: stretch;
+    }
+
+    .integrantes {
+        display: flex;
+        flex-direction: column;
+        font-size: 25px;
+        justify-content: stretch;
+        padding: 0;
+    }
+
+    h1 {
+        font-weight: 30px;
+        margin: 30px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-around;
+        padding: 50px;
+    }
+
+    .ph1 {
+        background-image: url(../multimedia/11m.jpg);
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+
+    .ph2 {
+        background-image: url(../multimedia/13m.jpg);
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+
+    .ph3 {
+        background-image: url(../multimedia/15m.jpg);
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+
+    .ph4 {
+        background-image: url(../multimedia/1m.jpg);
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+
+    .ph5 {
+        background-image: url(../multimedia/21m.jpg);
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+
+    .ph6 {
+        background-image: url(../multimedia/guitarras\ modificacion\ joa.jpg);
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+
+    .ph7 {
+        background-image: url(../multimedia/guerra.jpg);
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+    }
+
+    .discos {
+        display: flex;
+        flex-direction: column;
+        gap: 50px 50px;
+        padding: 20px;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .d1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ol {
+        margin: 10px 0px 0px 50px;
+    }
+}
