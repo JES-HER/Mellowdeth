@@ -1,0 +1,26 @@
+.discos {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 600px;
+    gap: 50px 50px;
+    padding: 20px;
+    justify-content: center;
+    transform: translate(50px);
+
+
+    .dd {
+        width: 400px;
+    }
+
+    .link {
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        margin: 20px;
+    }
+    .ol{
+        align-items: center;
+        transform: translate(50px);
+    }
+}

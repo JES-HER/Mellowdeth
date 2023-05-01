@@ -1,0 +1,110 @@
+.topgaleria2020 {
+    display: grid;
+    grid-template-columns: 10%, 90%;
+    grid-template-rows: 100%;
+    gap: 20px 10px;
+    grid-template-areas:
+        "item1 item2";
+    padding: 10px;
+    justify-content: space-around;
+    align-items: stretch;
+
+    .item1 {
+        grid-area: item1;
+        background-position: right;
+        justify-items: stretch;
+
+        .galeria {
+            font-family: "megadeth";
+            list-style-type: none;
+            text-decoration: none;
+            color: white;
+            margin: 1px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 10px;
+            width: 100px;
+            list-style-type: none;
+
+            .a1 {
+                font-size: 30px;
+                text-decoration: none;
+                color: white;
+            }
+
+            .cambioColor {
+                color: white;
+            }
+
+            .cambioColor:hover {
+                color: rgb(189, 116, 8);
+            }
+
+        }
+
+    }
+
+    .item2 {
+        grid-area: item2;
+        transform: translate(-100px);
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 300px);
+            grid-template-rows: repeat(3, 300px);
+            gap: 30px 30px;
+            grid-template-areas:
+                "fer1 38m 16m phc"
+                "phb phb pha pha"
+                "phb phb pha pha";
+            padding: 50px;
+            justify-content: center;
+            align-items: stretch;
+
+
+            .fer1 {
+                grid-area: fer1;
+                background-image: url(../multimedia/2020/fer.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .m38 {
+                grid-area: 38m;
+                background-image: url(../multimedia/2020/38m.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .m16 {
+                grid-area: 16m;
+                background-image: url(../multimedia/2020/16m.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .phc {
+                grid-area: phc;
+                background-color: black;
+                background-position: center;
+                background-size: cover;
+            }
+
+
+            .pha {
+                grid-area: pha;
+                background-color: black;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .phb {
+                grid-area: phb;
+                background-color: black;
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}

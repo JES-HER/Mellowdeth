@@ -1,0 +1,12 @@
+.videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+    padding: 50px;
+
+    h2{
+        padding: 10px;
+    }
+}

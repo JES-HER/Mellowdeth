@@ -1,0 +1,175 @@
+@import "variables";
+@import "galeria";
+@import "contacto";
+@import "shows";
+@import "videos";
+@import "discos";
+@import "2018";
+@import "2019";
+@import "2020";
+@import "2021";
+@import "2022";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+@font-face {
+    font-family: "megadeth";
+    src: url(../fuentes/megadeth.ttf)
+}
+
+body {
+    font-family: 'Roboto Mono', monospace, sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+/*MENU*/
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-style: solid;
+    border-color: gray;
+
+
+    .logo {
+        width: 400px;
+        height: 100px;
+        margin-left: 20px;
+    }
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    li {
+        font-family: "megadeth";
+        list-style-type: none;
+        font-weight: 60px;
+        font-size: 25px;
+        color: white;
+        display: inline-block;
+        margin: 20px;
+
+        .li1 {
+            text-decoration: none;
+            color: white;
+        }
+
+        .cambioColor {
+            color: white;
+        }
+
+        .cambioColor:hover {
+            color: rgb(189, 116, 8);
+        }
+    }
+}
+
+
+
+main {
+    display: grid;
+    grid-template-areas: none;
+
+    h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: "megadeth", sans-serif;
+        font-weight: 60px;
+        font-size: 50px;
+        color: white;
+        margin: 30px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+}
+
+.margen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.int {
+    display: grid;
+    grid-template-columns: 350px;
+    justify-items: center;
+
+    .i1 {
+        width: 300px;
+        background-color: black;
+        margin: 20px;
+    }
+}
+
+.i0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .i0-1 {
+        width: 600px;
+    }
+}
+
+
+/* DISEÑO DEL FOOTER */
+
+footer {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 100px;
+
+    h5 {
+        display: flex;
+        flex-direction: row;
+        margin: 0px 20px 0px 0px
+    }
+
+
+    .margen {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px;
+    }
+
+
+
+    .navegador footer {
+        justify-content: start;
+    }
+
+}

@@ -1,4 +1,4 @@
-* {
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,10 +13,11 @@ html {
     font-family: "megadeth";
     src: url(../fuentes/megadeth.ttf)
 }
+*/
 
 /*DISEÑO GENERAL DE TODAS LAS PAGINAS*/
 
-body {
+/*body {
     font-family: 'Roboto Mono', monospace, sans-serif;
     font-size: 20px;
     color: white
@@ -44,8 +45,6 @@ body {
     font-family: "megadeth";
     list-style-type: none;
     font-weight: 60px;
-    font-style: ;
-    text-align: ;
     text-decoration: none;
     color: white;
     display: inline-block;
@@ -56,10 +55,10 @@ body {
 .fondoimagen {
     display: grid;
     grid-template-areas: none;
-}
+}*/
 
 /*DISEÑO DE TITULOS Y PARRAFOS*/
-h1 {
+/*h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,14 +70,15 @@ h1 {
 
 p {
     font-size: 30px;
-}
+}*/
 
 /*IMAGENES DEL INDEX*/
 
-.logo {
+/*.logo {
     width: 300px;
     margin-left: 20px;
 }
+
 
 .i0 {
     display: flex;
@@ -108,8 +108,8 @@ p {
     grid-template-columns: 350px;
     justify-items: center;
 }
-
-/*DISESÑO DEL CONTACTO*/
+*/
+/*DISESÑO DEL CONTACTO
 
 .formulario {
     margin: 60px;
@@ -123,15 +123,16 @@ p {
 .m1 {
     fill-rule: evenodd;
 }
+*/
 
-.margen {
+/*.margen {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 20px;
-}
+}*/
 
-/* DISEÑO PARA PAG GALERIA */
+/* DISEÑO PARA PAG GALERIA 
 
 .grid {
     display: grid;
@@ -196,8 +197,9 @@ p {
     background-position: center;
     background-size: cover;
 }
+*/
 
-/* DISEÑO PARA PAG VIDEOS */
+/* DISEÑO PARA PAG VIDEOS 
 
 .videos {
     display: flex;
@@ -207,8 +209,9 @@ p {
     justify-content: space-around;
     padding: 50px;
 }
+*/
 
-/* DISEÑO PARA PAG DISCOS*/
+/* DISEÑO PARA PAG DISCOS
 
 .discos {
     display: grid;
@@ -230,9 +233,9 @@ p {
     display: inline-block;
     margin: 20px;
 }
+*/
 
-
-/* DISEÑO DEL FOOTER */
+/* DISEÑO DEL FOOTER 
 
 footer {
     margin: 10px;
@@ -253,6 +256,7 @@ footer {
 .navegador footer {
     justify-content: start;
 }
+*/
 
 @media screen and (max-width:425px) {
     .logo {
