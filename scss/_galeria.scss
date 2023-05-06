@@ -30,6 +30,7 @@
             margin: 10px;
             width: 100px;
             list-style-type: none;
+
             .a1 {
                 font-size: 30px;
                 text-decoration: none;
@@ -49,76 +50,246 @@
 
 
 
-.item2 {
-    grid-area: item2;
-    background-position: center;
-    transform: translateX(-100px);
+    .item2 {
+        grid-area: item2;
+        background-position: center;
+        transform: translateX(-100px);
 
 
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 300px);
-        grid-template-rows: repeat(3, 300px);
-        gap: 30px 30px;
-        grid-template-areas:
-            "ph1 ph2 ph3 ph3"
-            "ph4 ph4 ph3 ph3"
-            "ph6 ph6 ph5 ph7";
-        padding: 50px;
-        justify-content: center;
-        align-items: stretch;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 300px);
+            grid-template-rows: repeat(3, 300px);
+            gap: 30px 30px;
+            grid-template-areas:
+                "ph1 ph2 ph3 ph3"
+                "ph4 ph4 ph3 ph3"
+                "ph6 ph6 ph5 ph7";
+            padding: 50px;
+            justify-content: center;
+            align-items: stretch;
 
-        .ph1 {
-            grid-area: ph1;
-            background-image: url(../multimedia/11m.jpg);
-            background-position: center;
-            background-size: cover;
+            .ph1 {
+                grid-area: ph1;
+                background-image: url(../multimedia/11m.jpg);
+                background-position: center;
+                background-size: cover;
 
+            }
+
+            .ph2 {
+                grid-area: ph2;
+                background-image: url(../multimedia/13m.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .ph3 {
+                grid-area: ph3;
+                background-image: url(../multimedia/15m.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .ph4 {
+                grid-area: ph4;
+                background-image: url(../multimedia/1m.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .ph5 {
+                grid-area: ph5;
+                background-image: url(../multimedia/21m.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+
+            .ph6 {
+                grid-area: ph6;
+                background-image: url(../multimedia/guitarras\ modificacion\ joa.jpg);
+                background-position: top;
+                background-size: cover;
+            }
+
+            .ph7 {
+                grid-area: ph7;
+                background-image: url(../multimedia/guerra.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+
+}
+
+/*DISEÑO RESPONSIVE*/
+
+@media only screen and (max-width: 1440px) {
+    .topgaleria {
+        .item1 {
+            font-size: 30px;
         }
 
-        .ph2 {
-            grid-area: ph2;
-            background-image: url(../multimedia/13m.jpg);
-            background-position: center;
-            background-size: cover;
-        }
+        .item2 {
+            .grid {
+                grid-template-columns: repeat(3, 300px);
+                grid-template-rows: repeat(3, 300px);
+                gap: 30px 30px;
+                grid-template-areas:
+                    "ph1 ph2 ph3"
+                    "ph4 ph5 ph6"
+                    "ph7 pha pha";
 
-        .ph3 {
-            grid-area: ph3;
-            background-image: url(../multimedia/15m.jpg);
-            background-position: center;
-            background-size: cover;
-        }
+                padding: 50px;
+                justify-content: center;
+                align-items: stretch;
 
-        .ph4 {
-            grid-area: ph4;
-            background-image: url(../multimedia/1m.jpg);
-            background-position: center;
-            background-size: cover;
-        }
+                .pha {
+                    grid-area: pha;
+                    background-color: black;
+                    background-position: center;
+                    background-size: cover;
+                }
 
-        .ph5 {
-            grid-area: ph5;
-            background-image: url(../multimedia/21m.jpg);
-            background-position: center;
-            background-size: cover;
-        }
 
-        .ph6 {
-            grid-area: ph6;
-            background-image: url(../multimedia/guitarras\ modificacion\ joa.jpg);
-            background-position: top;
-            background-size: cover;
-        }
-
-        .ph7 {
-            grid-area: ph7;
-            background-image: url(../multimedia/guerra.jpg);
-            background-position: center;
-            background-size: cover;
+            }
         }
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .topgaleria {
+        .item1 {
+            transform: translate(20px);
+            font-size: 30px;
+        }
+
+        .item2 {
+            transform: translateX(30px) translateY(-40px);
+
+            .grid {
+                grid-template-columns: repeat(3, 250px);
+                grid-template-rows: repeat(3, 250px);
+                gap: 20px 20px;
+                grid-template-areas:
+                    "ph1 ph2 ph3"
+                    "ph4 ph5 ph6"
+                    "ph7 pha pha";
+
+                padding: 50px;
+                justify-content: center;
+                align-items: stretch;
+
+                .pha {
+                    grid-area: pha;
+                    background-color: black;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .topgaleria {
+        .item1 {
+
+            font-size: 15px;
+        }
+
+        .item2 {
+            transform: translateX(-20px)translateY(-10px);
+
+            .grid {
+                grid-template-columns: repeat(2, 200px);
+                grid-template-rows: repeat(4, 200px);
+                gap: 30px 30px;
+                grid-template-areas:
+                    "ph1 ph2"
+                    "ph3 ph4"
+                    "ph5 ph6"
+                    "ph7 pha ";
+
+                padding: 20px;
+                justify-content: center;
+                align-items: stretch;
+
+                .pha {
+                    grid-area: pha;
+                    background-color: black;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 407px) {
+    main {
+        padding: 10px;
+
+        .hg {
+            margin: 0px;
+            /*transform: translate(60px);*/
+        }
+    }
+
+    .topgaleria {
+        display: flex;
+        flex-direction: column;
+         /*transform: translate(60px);*/
+
+
+        .item1 {
+            font-size: 8px;
+            justify-content: stretch;
+
+
+            .galeria {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .a1 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .item2 {
+            justify-content: center;
+            /*transform: translate(20px);*/
+
+            .grid {
+                grid-template-columns: repeat(1, 350px);
+                grid-template-rows: repeat(7, 350px);
+                gap: 30px 30px;
+                grid-template-areas:
+                    "ph1 "
+                    "ph2"
+                    "ph3 "
+                    "ph4"
+                    "ph5 "
+                    "ph6"
+                    "ph7";
+
+                padding: 20px;
+                justify-content: center;
+                align-items: stretch;
+
+            }
+        }
+    }
 }

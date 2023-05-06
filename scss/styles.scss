@@ -1,7 +1,6 @@
 @import "variables";
 @import "galeria";
 @import "contacto";
-@import "shows";
 @import "videos";
 @import "discos";
 @import "2018";
@@ -18,6 +17,7 @@
 
 html {
     font-size: 62.5%;
+
 }
 
 
@@ -27,64 +27,69 @@ html {
 }
 
 body {
+
     font-family: 'Roboto Mono', monospace, sans-serif;
     font-size: 20px;
     color: white;
     background-color: black;
 }
 
+
+
 /*MENU*/
+header {
 
-.top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    border-style: solid;
-    border-color: gray;
+    .top {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
 
-    .logo {
-        width: 400px;
-        height: 100px;
-        margin-left: 20px;
+        .logo {
+            width: 400px;
+            height: 90px;
+            margin-left: 20px;
+        }
+    }
+
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+
+
+        li {
+            font-family: "megadeth";
+            list-style-type: none;
+            font-weight: 60px;
+            font-size: 30px;
+            color: white;
+            display: inline-block;
+            margin: 20px;
+
+            .li1 {
+                text-decoration: none;
+                color: white;
+            }
+
+            .cambioColor {
+                color: white;
+            }
+
+            .cambioColor:hover {
+                color: rgb(189, 116, 8);
+            }
+        }
     }
 }
 
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-
-
-    li {
-        font-family: "megadeth";
-        list-style-type: none;
-        font-weight: 60px;
-        font-size: 25px;
-        color: white;
-        display: inline-block;
-        margin: 20px;
-
-        .li1 {
-            text-decoration: none;
-            color: white;
-        }
-
-        .cambioColor {
-            color: white;
-        }
-
-        .cambioColor:hover {
-            color: rgb(189, 116, 8);
-        }
-    }
+hr {
+    border-bottom: gray 3px solid;
 }
-
-
 
 main {
     display: grid;
@@ -139,7 +144,7 @@ main {
     justify-content: center;
 
     .i0-1 {
-        width: 600px;
+        width: 800px;
     }
 }
 
@@ -170,6 +175,264 @@ footer {
 
     .navegador footer {
         justify-content: start;
+    }
+
+}
+
+
+/*********/
+
+@media only screen and (max-width: 1024px) {
+
+    header {
+        justify-content: space-around;
+
+        .top {
+
+            .logo {
+                width: 250px;
+                height: auto;
+
+            }
+
+            .nav {
+
+                .menu {
+
+                    li {
+                        .li1 {
+                            font-size: 25px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+
+    hr {
+        width: 1070px;
+    }
+
+    main {
+        display: block;
+
+        h1 {
+            width: 100%;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .i0 {
+            justify-content: center;
+
+            .i0-1 {
+                width: 600px;
+                height: auto;
+
+            }
+
+        }
+
+        .integrantes {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
+            .int {
+                justify-content: center;
+
+                .i1 {
+                    width: 100%;
+                    height: auto;
+
+                }
+            }
+        }
+
+    }
+}
+
+
+/*********/
+
+@media only screen and (max-width: 768px) {
+
+    header {
+
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 70px;
+
+
+            .logo {
+                width: 190px;
+                height: 50px;
+                margin: 0;
+            }
+
+            .nav {
+                transform: translateY(-13px);
+
+
+                .menu {
+
+
+                    li {
+                        margin: 0 5px;
+                    }
+
+                    .li1 {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    hr {
+        width: 800px;
+        border: 1.5px gray solid;
+    }
+
+    main {
+        display: block;
+
+        h1 {
+            width: 100%;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        .i0 {
+            justify-content: center;
+
+            .i0-1 {
+                width: 600px;
+                height: auto;
+
+            }
+
+        }
+
+        .integrantes {
+            display: flex;
+            flex-direction: column;
+
+
+            .int {
+                justify-content: center;
+
+                .i1 {
+                    width: 100%;
+                    height: auto;
+
+                }
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        margin: 50px;
+        justify-content: space-between;
+
+        h5 {
+            display: flex;
+            flex-direction: row;
+
+            .espacio {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+/*********/
+
+@media only screen and (max-width: 425px) {
+
+    header {
+        transform: translate(60px);
+        .top {
+
+            .nav {
+                justify-content: stretch;
+                flex-wrap: wrap;
+
+                .menu {
+                    li {
+                        .li1 {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    hr {
+        width: 570px;
+        border: 1.5px gray solid;
+    }
+
+    main {
+        
+        h1 {
+            width: 100%;
+            font-size: 25px;
+            transform: translate(30px);
+
+        }
+
+        p {
+            font-size: 15px;
+            transform: translate(60px);
+        }
+
+        .i0 {
+            transform: translate(60px);
+
+            .i0-1 {
+                width: 600px;
+                height: auto;
+
+
+            }
+
+        }
+
+        .integrantes {
+            display: flex;
+            flex-direction: column;
+            transform: translate(60px);
+
+
+            .int {
+                justify-content: center;
+
+                .i1 {
+                    width: 100%;
+                    height: auto;
+
+                }
+            }
+        }
     }
 
 }

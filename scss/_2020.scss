@@ -108,3 +108,152 @@
         }
     }
 }
+
+/*DISEÑO RESPONSIVE*/
+
+@media only screen and (max-width: 1440px) {
+    .topgaleria2020 {
+        .item1 {
+            font-size: 30px;
+        }
+
+        .item2 {
+            .grid {
+                grid-template-columns: repeat(3, 300px);
+                grid-template-rows: repeat(3, 300px);
+                gap: 30px 30px;
+                grid-template-areas:
+                    "fer1 38m 16m"
+                    "pha pha pha"
+                    "phb phb phb";
+
+
+                padding: 50px;
+                justify-content: center;
+                align-items: stretch;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .topgaleria2020 {
+        .item1 {
+            transform: translate(20px);
+            font-size: 30px;
+        }
+
+        .item2 {
+            transform: translateX(30px) translateY(-40px);
+
+            .grid {
+                grid-template-columns: repeat(3, 250px);
+                grid-template-rows: repeat(3, 250px);
+                gap: 20px 20px;
+                grid-template-areas:
+                    "fer1 38m 16m"
+                    "pha pha pha"
+                    "phb phb phb"
+                ;
+
+                padding: 50px;
+                justify-content: center;
+                align-items: stretch;
+
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .topgaleria2020 {
+        .item1 {
+
+            font-size: 15px;
+        }
+
+        .item2 {
+            transform: translateX(-20px)translateY(-10px);
+
+            .grid {
+                grid-template-columns: repeat(2, 200px);
+                grid-template-rows: repeat(4, 200px);
+                gap: 30px 30px;
+                grid-template-areas:
+                    "fer1 38m"
+                    "16m pha"
+                    "phb phb"
+                    "phc phc";
+
+                padding: 20px;
+                justify-content: center;
+                align-items: stretch;
+
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    main {
+        padding: 10px;
+
+        .hg {
+            margin: 0px;
+            transform: translate(60px);
+        }
+    }
+
+    .topgaleria2020 {
+        display: flex;
+        flex-direction: column;
+        transform: translateX(60px);
+
+
+
+        .item1 {
+            font-size: 8px;
+            justify-content: stretch;
+
+
+            .galeria {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                .a1 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .item2 {
+            justify-content: center;
+            transform: translate(20px);
+
+            .grid {
+                grid-template-columns: repeat(1, 350px);
+                grid-template-rows: repeat(6, 350px);
+                gap: 30px 30px;
+                grid-template-areas:
+                    "fer1"
+                    "38m"
+                    "16m"
+                    "pha"
+                    "phb"
+                    "phc";
+
+                padding: 20px;
+                justify-content: center;
+                align-items: stretch;
+
+            }
+        }
+    }
+}

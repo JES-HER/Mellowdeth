@@ -15,3 +15,26 @@
 
 
 }
+
+/*** DISEÑO RESPONSIVE***/
+
+@media only screen and (max-width: 768px) {
+    .formulario {
+        margin: 50px;
+        padding: 0px;
+        font-size: 20px;
+      
+    
+        .divmsj {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .input {
+            margin: 20px;
+        }
+    
+    
+    }
+    
+}
