@@ -21,6 +21,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;600&display=swap" rel="stylesheet">
 </head>
 
+<!--MENU-->
+
 <body class="navegador">
   <div class="contenedortotal">
     <header>
@@ -51,6 +53,7 @@
     </header>
     <hr>
 
+    <!--FORMULARIO DE CONTACTO-->
     <main>
       <h1>Contacto</h1>
     </main>
@@ -64,14 +67,10 @@
         <label for="correo">Correo:</label>
         <input type="email" name="correo">
       </div>
-      <div>
-        <label for="password">Pone tu contraseña</label>
-        <input type="password" name="password">
-      </div>
+
       <div class="divmsj">
-        <label for="mensaje" class="mensaje">Deja tu mensaje</label>
-        <textarea name="mensaje" cols="50" rows="20">
-            </textarea>
+        <label for="mensaje">Deja tu mensaje</label>
+        <textarea name="mensaje" id="" cols="30" rows="10" class="mensaje"></textarea>
       </div>
 
       <div>
@@ -79,11 +78,6 @@
         <input type="radio" name="sexo" value="F">F
         <input type="radio" name="sexo" value="M">M
         <input type="radio" name="sexo" value="NC">No contesta
-      </div>
-
-      <div>
-        <input type="reset" value="Borrar">
-        <input type="submit" value="Enviar">
       </div>
 
       <div>
@@ -97,16 +91,35 @@
         </select>
       </div>
 
+      <div>
+        <input type="reset" value="Borrar" class="boton">
+        <input type="submit" value="Enviar" class="boton">
+      </div>
+
     </form>
+
+    <!--PIE DE PAGINA-->
 
     <footer class="margenpiedepagina">
 
-      <h5 class="espacio">Seguinos en:</h5>
-      <nav>
-        <a href="https://www.instagram.com/mellowdeth_argentina/">Instagram</a>
-        <a href="https://www.facebook.com/mellowdeth">Facebook</a>
-        <a href="https://open.spotify.com/artist/0lXOSqHjvPnvKkijvFq3ra?si=eWAPaBPUQFi7mJ7lAgb7qg">Spotify</a>
-        <a href="https://www.youtube.com/@mellowdeth">YouTube</a>
+      <h3 class="espacio">Seguinos en:</h3>
+      <nav class="nav">
+        <div>
+          <a href="https://www.instagram.com/mellowdeth_argentina/"><img src="/multimedia/Instagram_logo_2016.svg.webp"
+              alt="instagram" class="png"></a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/mellowdeth"><img src="/multimedia/Facebook_Logo_(2019).png" alt="facebook"
+              class="png"></a>
+        </div>
+        <div>
+          <a href="https://open.spotify.com/artist/0lXOSqHjvPnvKkijvFq3ra?si=eWAPaBPUQFi7mJ7lAgb7qg"><img
+              src="/multimedia/Spotify_logo_without_text.svg.png" alt="spotify" class="png"></a>
+        </div>
+        <div>
+          <a href="https://www.youtube.com/@mellowdeth"><img src="/multimedia/Youtube_logo.png" alt="youtube"
+              class="png"></a>
+        </div>
       </nav>
 
     </footer>

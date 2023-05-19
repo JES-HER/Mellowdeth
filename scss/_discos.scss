@@ -1,11 +1,50 @@
 .discos {
+
     display: grid;
-    grid-template-columns: 500px 500px;
-    grid-template-rows: 600px;
-    gap: 50px 50px;
-    padding: 20px;
-    justify-content: center;
-    /*transform: translate(50px);*/
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "live rusted"
+        "hush love"
+        "yout libre";
+    justify-items: center;
+
+    .live {
+        grid-area: live;
+    }
+
+    .rusted {
+        grid-area: rusted;
+    }
+
+    .hush {
+        grid-area: hush;
+    }
+
+    .love {
+        grid-area: love;
+    }
+
+    .yout {
+        grid-area: yout;
+    }
+
+    .libre {
+        grid-area: libre;
+    }
+
+
+    .d1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .sp {
+        width: 20px;
+        height: auto;
+    }
 
 
     .dd {
@@ -14,7 +53,6 @@
 
     .link {
         list-style-type: none;
-        /*text-decoration: none;*/
         color: white;
         display: inline-block;
         margin: 20px;
@@ -24,15 +62,26 @@
     .ol {
         align-items: center;
         transform: translate(50px);
+
     }
 }
 
 /***DISEÑO RESPONSIVE ***/
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
     .discos {
         padding: 0 0 0 20px;
         margin: 0 0 0 20px;
+        transform: translate(50px);
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .discos {
+        padding: 0 20px 0 10px;
+        margin: 0 20px 0 10px;
         transform: translate(50px);
     }
 
@@ -46,6 +95,9 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        width: 500px;
+        padding: 0 0 0 30px;
+        margin: 0;
 
         .d1 {
             .dd {

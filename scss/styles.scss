@@ -29,7 +29,6 @@ html {
 body {
 
     font-family: 'Roboto Mono', monospace, sans-serif;
-    font-size: 20px;
     color: white;
     background-color: black;
 }
@@ -39,13 +38,15 @@ body {
 /*MENU*/
 header {
 
+
+
     .top {
 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
+        position: sticky;
 
         .logo {
             width: 400px;
@@ -100,14 +101,17 @@ main {
         flex-direction: row;
         justify-content: center;
         font-family: "megadeth", sans-serif;
-        font-weight: 60px;
-        font-size: 50px;
+        font-size: 100px;
         color: white;
         margin: 30px;
     }
 
     p {
         font-size: 30px;
+    }
+    .p{
+        font-size: 35px;
+        font-weight: bold;
     }
 }
 
@@ -152,12 +156,25 @@ main {
 /* DISEÑO DEL FOOTER */
 
 footer {
-    margin: 10px;
+    margin: 200px 0 100px 100px;
     display: flex;
     flex-direction: row;
-    margin: 100px;
+    flex-wrap: wrap;
+    align-items: center;
 
-    h5 {
+    .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .png {
+            width: 20px;
+            height: auto;
+        }
+    }
+
+    h3 {
         display: flex;
         flex-direction: row;
         margin: 0px 20px 0px 0px
@@ -180,7 +197,18 @@ footer {
 }
 
 
-/*********/
+/****RESPONSIVE*****/
+
+@media only screen and (max-width: 1440px) {
+
+    main {
+
+        h1 {
+            flex-wrap: wrap;
+            font-size: 75px;
+        }
+    }
+}
 
 @media only screen and (max-width: 1024px) {
 
@@ -220,7 +248,7 @@ footer {
 
         h1 {
             width: 100%;
-            font-size: 30px;
+            font-size: 50px;
         }
 
         p {
@@ -309,11 +337,15 @@ footer {
 
         h1 {
             width: 100%;
-            font-size: 30px;
+            font-size: 40px;
         }
 
         p {
             font-size: 20px;
+        }
+        .p{
+            font-size: 30px;
+            font-weight: bold;
         }
 
         .i0 {
@@ -348,7 +380,7 @@ footer {
         display: flex;
         flex-direction: row;
         margin: 50px;
-        justify-content: space-between;
+        justify-content: center;
 
         h5 {
             display: flex;
@@ -368,6 +400,7 @@ footer {
 
     header {
         transform: translate(60px);
+
         .top {
 
             .nav {
@@ -392,17 +425,21 @@ footer {
     }
 
     main {
-        
+
         h1 {
             width: 100%;
-            font-size: 25px;
+            font-size: 27px;
             transform: translate(30px);
 
         }
 
-        p {
+        .margen {
+            width: 500px;
+           transform: translate(20px);
+        }
+
+        .p {
             font-size: 15px;
-            transform: translate(60px);
         }
 
         .i0 {
@@ -425,6 +462,12 @@ footer {
 
             .int {
                 justify-content: center;
+
+                .p {
+                    font-size: 20px;
+                    font-weight: bold;
+
+                }
 
                 .i1 {
                     width: 100%;

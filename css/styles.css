@@ -206,9 +206,14 @@
   }
 }
 .formulario {
-  margin: 100px;
-  padding: 50px;
+  display: grid;
+  grid-column: 1;
+  justify-content: center;
   font-size: 30px;
+}
+.formulario .mensaje {
+  width: 500px;
+  height: 300px;
 }
 .formulario .divmsj {
   display: flex;
@@ -216,6 +221,12 @@
 }
 .formulario .input {
   margin: 20px;
+}
+.formulario .boton {
+  width: 100px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10%;
 }
 
 /*** DISEÑO RESPONSIVE***/
@@ -261,19 +272,44 @@
 }
 .discos {
   display: grid;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 600px;
-  gap: 50px 50px;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "live rusted" "hush love" "yout libre";
+  justify-items: center;
+}
+.discos .live {
+  grid-area: live;
+}
+.discos .rusted {
+  grid-area: rusted;
+}
+.discos .hush {
+  grid-area: hush;
+}
+.discos .love {
+  grid-area: love;
+}
+.discos .yout {
+  grid-area: yout;
+}
+.discos .libre {
+  grid-area: libre;
+}
+.discos .d1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 20px;
-  justify-content: center;
-  /*transform: translate(50px);*/
+}
+.discos .sp {
+  width: 20px;
+  height: auto;
 }
 .discos .dd {
   width: 400px;
 }
 .discos .link {
   list-style-type: none;
-  /*text-decoration: none;*/
   color: white;
   display: inline-block;
   margin: 20px;
@@ -285,10 +321,17 @@
 }
 
 /***DISEÑO RESPONSIVE ***/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1440px) {
   .discos {
     padding: 0 0 0 20px;
     margin: 0 0 0 20px;
+    transform: translate(50px);
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .discos {
+    padding: 0 20px 0 10px;
+    margin: 0 20px 0 10px;
     transform: translate(50px);
   }
 }
@@ -299,6 +342,9 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 500px;
+    padding: 0 0 0 30px;
+    margin: 0;
   }
   .discos .d1 .dd {
     transform: translate(30px);
@@ -1279,7 +1325,6 @@ html {
 }
 body {
   font-family: "Roboto Mono", monospace, sans-serif;
-  font-size: 20px;
   color: white;
   background-color: black;
 }
@@ -1290,6 +1335,7 @@ header .top {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
 }
 header .top .logo {
   width: 400px;
@@ -1334,13 +1380,16 @@ main h1 {
   flex-direction: row;
   justify-content: center;
   font-family: "megadeth", sans-serif;
-  font-weight: 60px;
-  font-size: 50px;
+  font-size: 100px;
   color: white;
   margin: 30px;
 }
 main p {
   font-size: 30px;
+}
+main .p {
+  font-size: 35px;
+  font-weight: bold;
 }
 
 .margen {
@@ -1380,12 +1429,23 @@ main p {
 
 /* DISEÑO DEL FOOTER */
 footer {
-  margin: 10px;
+  margin: 200px 0 100px 100px;
   display: flex;
   flex-direction: row;
-  margin: 100px;
+  flex-wrap: wrap;
+  align-items: center;
 }
-footer h5 {
+footer .nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+footer .nav .png {
+  width: 20px;
+  height: auto;
+}
+footer h3 {
   display: flex;
   flex-direction: row;
   margin: 0px 20px 0px 0px;
@@ -1400,7 +1460,13 @@ footer .navegador footer {
   justify-content: start;
 }
 
-/*********/
+/****RESPONSIVE*****/
+@media only screen and (max-width: 1440px) {
+  main h1 {
+    flex-wrap: wrap;
+    font-size: 75px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   header {
     justify-content: space-around;
@@ -1420,7 +1486,7 @@ footer .navegador footer {
   }
   main h1 {
     width: 100%;
-    font-size: 30px;
+    font-size: 50px;
   }
   main p {
     font-size: 20px;
@@ -1476,10 +1542,14 @@ footer .navegador footer {
   }
   main h1 {
     width: 100%;
-    font-size: 30px;
+    font-size: 40px;
   }
   main p {
     font-size: 20px;
+  }
+  main .p {
+    font-size: 30px;
+    font-weight: bold;
   }
   main .i0 {
     justify-content: center;
@@ -1503,7 +1573,7 @@ footer .navegador footer {
     display: flex;
     flex-direction: row;
     margin: 50px;
-    justify-content: space-between;
+    justify-content: center;
   }
   footer h5 {
     display: flex;
@@ -1531,12 +1601,15 @@ footer .navegador footer {
   }
   main h1 {
     width: 100%;
-    font-size: 25px;
+    font-size: 27px;
     transform: translate(30px);
   }
-  main p {
+  main .margen {
+    width: 500px;
+    transform: translate(20px);
+  }
+  main .p {
     font-size: 15px;
-    transform: translate(60px);
   }
   main .i0 {
     transform: translate(60px);
@@ -1552,6 +1625,10 @@ footer .navegador footer {
   }
   main .integrantes .int {
     justify-content: center;
+  }
+  main .integrantes .int .p {
+    font-size: 20px;
+    font-weight: bold;
   }
   main .integrantes .int .i1 {
     width: 100%;
