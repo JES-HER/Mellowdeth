@@ -18,6 +18,7 @@
 html {
     font-size: 62.5%;
 
+
 }
 
 
@@ -30,15 +31,16 @@ body {
 
     font-family: 'Roboto Mono', monospace, sans-serif;
     color: white;
+    /*background-image: url(../multimedia/arte_digital_wallpapers_hd_30-2560x1600.jpg);
+    background-size: cover;
+    background-position: center;*/
     background-color: black;
+    background: radial-gradient(circle, rgba(44, 37, 37, 0.5), black);
 }
-
 
 
 /*MENU*/
 header {
-
-
 
     .top {
 
@@ -46,7 +48,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: sticky;
+        background-color: rgba(0, 0, 0, 0.63);
 
         .logo {
             width: 400px;
@@ -88,10 +90,6 @@ header {
     }
 }
 
-hr {
-    border-bottom: gray 3px solid;
-}
-
 main {
     display: grid;
     grid-template-areas: none;
@@ -101,7 +99,7 @@ main {
         flex-direction: row;
         justify-content: center;
         font-family: "megadeth", sans-serif;
-        font-size: 100px;
+        font-size: 98px;
         color: white;
         margin: 30px;
     }
@@ -109,7 +107,8 @@ main {
     p {
         font-size: 30px;
     }
-    .p{
+
+    .p {
         font-size: 35px;
         font-weight: bold;
     }
@@ -239,9 +238,7 @@ footer {
 
     }
 
-    hr {
-        width: 1070px;
-    }
+
 
     main {
         display: block;
@@ -327,10 +324,7 @@ footer {
 
 
 
-    hr {
-        width: 800px;
-        border: 1.5px gray solid;
-    }
+
 
     main {
         display: block;
@@ -343,7 +337,8 @@ footer {
         p {
             font-size: 20px;
         }
-        .p{
+
+        .p {
             font-size: 30px;
             font-weight: bold;
         }
@@ -419,11 +414,6 @@ footer {
     }
 
 
-    hr {
-        width: 570px;
-        border: 1.5px gray solid;
-    }
-
     main {
 
         h1 {
@@ -435,7 +425,7 @@ footer {
 
         .margen {
             width: 500px;
-           transform: translate(20px);
+            transform: translate(20px);
         }
 
         .p {

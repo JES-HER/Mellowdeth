@@ -112,7 +112,6 @@
   }
   .topgaleria .item2 .grid .pha {
     grid-area: pha;
-    background-color: black;
     background-position: center;
     background-size: cover;
   }
@@ -136,7 +135,6 @@
   }
   .topgaleria .item2 .grid .pha {
     grid-area: pha;
-    background-color: black;
     background-position: center;
     background-size: cover;
   }
@@ -159,7 +157,6 @@
   }
   .topgaleria .item2 .grid .pha {
     grid-area: pha;
-    background-color: black;
     background-position: center;
     background-size: cover;
   }
@@ -302,8 +299,9 @@
   padding: 20px;
 }
 .discos .sp {
-  width: 20px;
+  width: 30px;
   height: auto;
+  padding: 0 0 0 10px;
 }
 .discos .dd {
   width: 400px;
@@ -313,11 +311,13 @@
   color: white;
   display: inline-block;
   margin: 20px;
+  font-size: 30px;
   font-weight: bold;
 }
 .discos .ol {
   align-items: center;
   transform: translate(50px);
+  font-size: 20px;
 }
 
 /***DISEÑO RESPONSIVE ***/
@@ -429,19 +429,16 @@
 }
 .topgaleria2018 .item2 .grid .pha {
   grid-area: pha;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
 .topgaleria2018 .item2 .grid .phb {
   grid-area: phb;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
 .topgaleria2018 .item2 .grid .phc {
   grid-area: phc;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
@@ -616,13 +613,11 @@
 }
 .topgaleria2019 .item2 .grid .pha {
   grid-area: pha;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
 .topgaleria2019 .item2 .grid .phb {
   grid-area: phb;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
@@ -791,19 +786,16 @@
 }
 .topgaleria2020 .item2 .grid .phc {
   grid-area: phc;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
 .topgaleria2020 .item2 .grid .pha {
   grid-area: pha;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
 .topgaleria2020 .item2 .grid .phb {
   grid-area: phb;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
@@ -978,13 +970,11 @@
 }
 .topgaleria2021 .item2 .grid .pha {
   grid-area: pha;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
 .topgaleria2021 .item2 .grid .phb {
   grid-area: phb;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
@@ -1213,7 +1203,6 @@
 }
 .topgaleria2022 .item2 .grid .pha {
   grid-area: pha;
-  background-color: black;
   background-position: center;
   background-size: cover;
 }
@@ -1326,7 +1315,11 @@ html {
 body {
   font-family: "Roboto Mono", monospace, sans-serif;
   color: white;
+  /*background-image: url(../multimedia/arte_digital_wallpapers_hd_30-2560x1600.jpg);
+  background-size: cover;
+  background-position: center;*/
   background-color: black;
+  background: radial-gradient(circle, rgba(44, 37, 37, 0.5), black);
 }
 
 /*MENU*/
@@ -1335,7 +1328,7 @@ header .top {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
+  background-color: rgba(0, 0, 0, 0.63);
 }
 header .top .logo {
   width: 400px;
@@ -1367,10 +1360,6 @@ header .menu li .cambioColor:hover {
   color: rgb(189, 116, 8);
 }
 
-hr {
-  border-bottom: gray 3px solid;
-}
-
 main {
   display: grid;
   grid-template-areas: none;
@@ -1380,7 +1369,7 @@ main h1 {
   flex-direction: row;
   justify-content: center;
   font-family: "megadeth", sans-serif;
-  font-size: 100px;
+  font-size: 98px;
   color: white;
   margin: 30px;
 }
@@ -1478,9 +1467,6 @@ footer .navegador footer {
   header .top .nav .menu li .li1 {
     font-size: 25px;
   }
-  hr {
-    width: 1070px;
-  }
   main {
     display: block;
   }
@@ -1532,10 +1518,6 @@ footer .navegador footer {
   }
   header .top .nav .menu .li1 {
     font-size: 15px;
-  }
-  hr {
-    width: 800px;
-    border: 1.5px gray solid;
   }
   main {
     display: block;
@@ -1594,10 +1576,6 @@ footer .navegador footer {
   }
   header .top .nav .menu li .li1 {
     font-size: 20px;
-  }
-  hr {
-    width: 570px;
-    border: 1.5px gray solid;
   }
   main h1 {
     width: 100%;
